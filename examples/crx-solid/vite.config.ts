@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
-import crx from 'vite-plugin-crx-mv3'
+import crx from 'vite-plugin-crx-mv3-envs'
 
 
 export default defineConfig(({ mode }) => {

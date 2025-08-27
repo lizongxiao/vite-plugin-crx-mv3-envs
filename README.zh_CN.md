@@ -1,5 +1,5 @@
 
-# vite-plugin-crx-mv3
+# vite-plugin-crx-mv3-envs
 
 > 使用 Vite 构建 Chrome 扩展
 
@@ -20,11 +20,11 @@
 
 ```bash
 # npm
-npm install vite-plugin-crx-mv3 -D
+npm install vite-plugin-crx-mv3-envs -D
 # or yarn
-yarn add vite-plugin-crx-mv3 -D
+yarn add vite-plugin-crx-mv3-envs -D
 # or pnpm
-pnpm add vite-plugin-crx-mv3 -D
+pnpm add vite-plugin-crx-mv3-envs -D
 ```
 
 ### 插件选项
@@ -54,7 +54,7 @@ Chrome扩展的manifest.json文件路径。
 ```js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import crx from 'vite-plugin-crx-mv3'
+import crx from 'vite-plugin-crx-mv3-envs'
 
 export default defineConfig({
   plugins: [

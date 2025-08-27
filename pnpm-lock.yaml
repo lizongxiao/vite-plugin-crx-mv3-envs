@@ -48,57 +48,57 @@ importers:
   examples/crx-basic:
     specifiers:
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     devDependencies:
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-chrome.script:
     specifiers:
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     devDependencies:
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-contentscript-sass-less:
     specifiers:
       less: ^4.1.3
       sass: ^1.56.1
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     dependencies:
       less: 4.1.3
       sass: 1.56.1
     devDependencies:
       vite: 3.1.8_less@4.1.3+sass@1.56.1
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-devtools:
     specifiers:
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     devDependencies:
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-i18n:
     specifiers:
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     devDependencies:
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-newtab:
     specifiers:
       '@vitejs/plugin-vue': ^2.3.0
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     devDependencies:
       '@vitejs/plugin-vue': 2.3.4_vite@3.1.8
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-react:
     specifiers:
@@ -109,7 +109,7 @@ importers:
       react-dom: ^17.0.2
       typescript: ^4.5.4
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     dependencies:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -119,7 +119,7 @@ importers:
       '@vitejs/plugin-react': 1.3.2
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-react-sandbox:
     specifiers:
@@ -130,7 +130,7 @@ importers:
       react-dom: ^17.0.2
       typescript: ^4.5.4
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     dependencies:
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
@@ -140,21 +140,21 @@ importers:
       '@vitejs/plugin-react': 1.3.2
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-solid:
     specifiers:
       solid-js: ^1.5.1
       typescript: ^4.5.4
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
       vite-plugin-solid: ^2.3.0
     dependencies:
       solid-js: 1.6.1
     devDependencies:
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
       vite-plugin-solid: 2.3.10_solid-js@1.6.1+vite@3.1.8
 
   examples/crx-vue:
@@ -163,7 +163,7 @@ importers:
       less: ^4.1.3
       typescript: ^4.5.4
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
       vue: ^3.2.25
       vue-tsc: ^0.40.13
     dependencies:
@@ -173,7 +173,7 @@ importers:
       less: 4.1.3
       typescript: 4.8.4
       vite: 3.1.8_less@4.1.3
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
       vue-tsc: 0.40.13_typescript@4.8.4
 
   examples/crx-vue-antd-bookmarks:
@@ -184,7 +184,7 @@ importers:
       less: ^4.1.3
       unplugin-vue-components: ^0.22.11
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
       vue: ^3.2.25
     dependencies:
       '@ant-design/icons-vue': 6.1.0_vue@3.2.41
@@ -195,14 +195,14 @@ importers:
       '@vitejs/plugin-vue': 2.3.4_vite@3.1.8+vue@3.2.41
       unplugin-vue-components: 0.22.11_vue@3.2.41
       vite: 3.1.8_less@4.1.3
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
   examples/crx-vue-drawer:
     specifiers:
       '@vitejs/plugin-vue': ^2.3.0
       typescript: ^4.5.4
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
       vue: ^3.2.25
       vue-tsc: ^0.40.13
     dependencies:
@@ -211,7 +211,7 @@ importers:
       '@vitejs/plugin-vue': 2.3.4_vite@3.1.8+vue@3.2.41
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
       vue-tsc: 0.40.13_typescript@4.8.4
 
   examples/crx-vue-multi-page:
@@ -219,7 +219,7 @@ importers:
       '@vitejs/plugin-vue': ^2.3.0
       typescript: ^4.5.4
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
       vue: ^3.2.25
       vue-tsc: ^0.40.13
     dependencies:
@@ -228,19 +228,19 @@ importers:
       '@vitejs/plugin-vue': 2.3.4_vite@3.1.8+vue@3.2.41
       typescript: 4.8.4
       vite: 3.1.8
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
       vue-tsc: 0.40.13_typescript@4.8.4
 
   examples/crx-webAccessibleResources:
     specifiers:
       less: ^4.1.3
       vite: ^3.0.9
-      vite-plugin-crx-mv3: workspace:*
+      vite-plugin-crx-mv3-envs: workspace:*
     dependencies:
       less: 4.1.3
     devDependencies:
       vite: 3.1.8_less@4.1.3
-      vite-plugin-crx-mv3: link:../..
+      vite-plugin-crx-mv3-envs: link:../..
 
 packages:
 

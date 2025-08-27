@@ -15,6 +15,6 @@
     "@vitejs/plugin-react": "^1.0.7",
     "vite": "^3.0.9",
     "typescript": "^4.5.4",
-    "vite-plugin-crx-mv3": "workspace:*"
+    "vite-plugin-crx-mv3-envs": "workspace:*"
   }
 }

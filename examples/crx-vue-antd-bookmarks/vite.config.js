@@ -1,7 +1,7 @@
 import { defineConfig, splitVendorChunkPlugin } from 'vite'
 import path from 'path'
 import vue from '@vitejs/plugin-vue'
-import crx from 'vite-plugin-crx-mv3'
+import crx from 'vite-plugin-crx-mv3-envs'
 import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 

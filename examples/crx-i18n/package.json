@@ -7,7 +7,7 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "vite-plugin-crx-mv3": "workspace:*",
+    "vite-plugin-crx-mv3-envs": "workspace:*",
     "vite": "^3.0.9"
   }
 }

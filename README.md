@@ -1,5 +1,5 @@
 
-# vite-plugin-crx-mv3 魔改版，支持多环境
+# vite-plugin-crx-mv3-envs 魔改版，支持多环境
 
 > Build a Chrome Extension with Vite.
 
@@ -19,11 +19,11 @@
 
 ```bash
 # npm
-npm install vite-plugin-crx-mv3 -D
+npm install vite-plugin-crx-mv3-envs -D
 # or yarn
-yarn add vite-plugin-crx-mv3 -D
+yarn add vite-plugin-crx-mv3-envs -D
 # or pnpm
-pnpm add vite-plugin-crx-mv3 -D
+pnpm add vite-plugin-crx-mv3-envs -D
 ```
 ### Plugin options
 
@@ -53,7 +53,7 @@ Control automatic page loading in dev environment
 ```js
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import crx from 'vite-plugin-crx-mv3'
+import crx from 'vite-plugin-crx-mv3-envs'
 
 export default defineConfig({
   plugins: [

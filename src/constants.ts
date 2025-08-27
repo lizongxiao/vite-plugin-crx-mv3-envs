@@ -1,4 +1,4 @@
-export const VITE_PLUGIN_CRX_MV3 = 'vite-plugin-crx-mv3'
+export const VITE_PLUGIN_CRX_MV3 = 'vite-plugin-crx-mv3-envs'
 export const UPDATE_CONTENT = 'UPDATE_CONTENT'
 // export const UPDATE_SERVICE_WORKER = 'UPDATE_SERVICE_WORKER'
 export const RELOAD = 'RELOAD'
