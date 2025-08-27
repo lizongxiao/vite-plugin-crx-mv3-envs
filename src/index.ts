@@ -46,7 +46,7 @@ export default function crxMV3(options: Partial<Options> = {}): Plugin {
 
   async function websocketServerStart(manifest) {
     if (
-      config.mode === 'production' ||
+      config.mode !== 'development' ||
       (!manifest?.background?.service_worker &&
         !manifest?.content_scripts?.length)
     ) {
