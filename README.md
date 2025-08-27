@@ -1,5 +1,5 @@
 
-# vite-plugin-crx-mv3
+# vite-plugin-crx-mv3 魔改版，支持多环境
 
 > Build a Chrome Extension with Vite.
 
