@@ -30,7 +30,7 @@
   "author": "Jervis",
   "license": "MIT",
   "repository": {
-    "url": "https://github.com/Jervis2049/vite-plugin-crx-mv3-envs.git"
+    "url": "git+https://github.com/Jervis2049/vite-plugin-crx-mv3-envs.git"
   },
   "dependencies": {
     "acorn": "^8.10.0",
