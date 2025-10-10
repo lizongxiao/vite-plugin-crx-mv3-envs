@@ -20,10 +20,11 @@ interface Options {
   port?: number
   manifest: string
   reloadPage?: boolean
+  hotReload?: boolean
 }
 
 export default function crxMV3(options: Partial<Options> = {}): Plugin {
-  let { port = 8181, manifest = '', reloadPage = true } = options
+  let { port = 8181, manifest = '', reloadPage = true, hotReload = true } = options
 
   if (
     !manifest ||
@@ -46,6 +47,7 @@ export default function crxMV3(options: Partial<Options> = {}): Plugin {
 
   async function websocketServerStart(manifest) {
     if (
+      !hotReload ||
       config.mode !== 'development' ||
       (!manifest?.background?.service_worker &&
         !manifest?.content_scripts?.length)
@@ -194,7 +196,7 @@ export default function crxMV3(options: Partial<Options> = {}): Plugin {
       await manifestProcessor.generateManifest(this, bundle, bundleMap)
     },
     writeBundle() {
-      if (socket) {
+      if (hotReload && socket) {
         if (!popupMoudles.includes(changedFilePath)) {
           socket.send(UPDATE_CONTENT)
         }
