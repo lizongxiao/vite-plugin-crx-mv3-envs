@@ -147,7 +147,7 @@ export default function crxMV3(options: Partial<Options> = {}): Plugin {
     },
     async buildStart() {
       this.addWatchFile(manifestAbsolutPath)
-      await manifestProcessor.generateDevScript(this, port, reloadPage)
+      await manifestProcessor.generateDevScript(this, port, reloadPage, hotReload)
       await manifestProcessor.generateAsset(this)
       await generateLocales(this, join(config.root, srcDir))
     },

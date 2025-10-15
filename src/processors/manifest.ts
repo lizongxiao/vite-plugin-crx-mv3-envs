@@ -199,12 +199,13 @@ export class ManifestProcessor {
     return { code: data + code, map: null}; 
   }
 
-  public async generateDevScript(context, port, reloadPage) {
+  public async generateDevScript(context, port, reloadPage, hotReload = true) {
     this.manifest = await contentScriptsParse.emitDevScript(
       context,
       port,
       this,
-      reloadPage
+      reloadPage,
+      hotReload
     )
   }
 

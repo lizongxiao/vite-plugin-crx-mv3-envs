@@ -41,7 +41,8 @@ export async function emitDevScript(
   context: PluginContext,
   port: number,
   manifestContext,
-  reloadPage: boolean
+  reloadPage: boolean,
+  hotReload: boolean = true
 ): Promise<Record<string, any>> {
   let viteConfig = manifestContext.options.viteConfig
   let manifest = manifestContext.manifest
@@ -49,6 +50,10 @@ export async function emitDevScript(
   let contentScripts = manifest?.content_scripts
 
   if (viteConfig.mode === 'production') return manifest
+  
+  // 如果热更新被禁用，不生成开发脚本
+  if (!hotReload) return manifest
+  
   if (!serviceWorkerPath && contentScripts?.length) {
     let swPath = normalizePathResolve(__dirname, 'client/sw.js')
     let content = await getContentFromCache(context.cache, swPath)
